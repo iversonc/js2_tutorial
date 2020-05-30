@@ -1,5 +1,5 @@
 let assert = require("assert");
-let Phrase = require("../index.js");
+let Phrase = require("../main.js");
 
 describe("Phrase", function() {
 
@@ -23,6 +23,11 @@ describe("Phrase", function() {
     it("should return true for a palindrome with punctuation", function() {
       let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
       assert.strictEqual(punctuatedPalindrome.letters(), "MadamImAdam");
+    });
+
+    it("should return false for an empty palindrome", function() {
+      let emptyPalindrome = new Phrase("");
+      assert.notStrictEqual(emptyPalindrome.letters(), "");
     });
   });
 
