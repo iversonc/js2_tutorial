@@ -27,7 +27,7 @@ describe("Phrase", function() {
 
     it("should return false for an empty palindrome", function() {
       let emptyPalindrome = new Phrase("");
-      assert.notStrictEqual(emptyPalindrome.letters(), "");
+      assert(!emptyPalindrome.palindrome());
     });
   });
 
