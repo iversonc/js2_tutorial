@@ -25,6 +25,7 @@
     "test": "test"
   },
   "dependencies": {
-    "iversonc-palindrome": "^0.1.5"
+    "iversonc-palindrome": "^0.1.5",
+    "urllib": "^2.35.0"
   }
 }
